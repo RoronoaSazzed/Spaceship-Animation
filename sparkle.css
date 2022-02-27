@@ -1,0 +1,39 @@
+.sparkle {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+#sparkle-1,
+#sparkle-2,
+#sparkle-3 {
+  transform-box: fill-box;
+  transform-origin: center;
+  /* animation: sparking 1s ease-in-out forwards; */
+}
+
+.sparklingAnimation {
+  animation: sparking 1s ease-in-out forwards;
+}
+
+#sparkle-2 {
+  animation-delay: 0.25s;
+}
+
+#sparkle-3 {
+  animation-delay: 0.5s;
+}
+
+@keyframes sparking {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
